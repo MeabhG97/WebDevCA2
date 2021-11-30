@@ -1,0 +1,64 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 29 Nov 2021, 14:58:23
+    Author     : meabh
+*/
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+}
+
+#container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 20% 1fr 5%;
+    grid-template-rows: 15% 1fr 10%;
+    grid-template-areas:    "header header header"
+                            "nav main ."
+                            "footer footer footer";
+}
+
+header{
+    grid-area: header;
+    background-color: #3D52D5;
+}
+
+nav{
+    grid-area: nav;
+    background-color: #C9CAD9
+}
+
+nav #dropdown{
+    display: inline-block;
+}
+
+nav #dropdown #drop-button{
+    background-color: #3D52D5;
+    color: #FFFFFF;
+    border: none;
+    padding: 5px;    
+}
+
+nav #dropdown .drop-content{
+    display: none;
+    background-color: #0F94D2;
+    color: #FFFFFF;
+}
+
+nav #dropdown:hover .drop-content{
+    display: block;
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+}
