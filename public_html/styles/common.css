@@ -31,28 +31,7 @@ header{
 
 nav{
     grid-area: nav;
-    background-color: #C9CAD9
-}
-
-nav #dropdown{
-    display: inline-block;
-}
-
-nav #dropdown #drop-button{
-    background-color: #3D52D5;
-    color: #FFFFFF;
-    border: none;
-    padding: 5px;    
-}
-
-nav #dropdown .drop-content{
-    display: none;
-    background-color: #0F94D2;
-    color: #FFFFFF;
-}
-
-nav #dropdown:hover .drop-content{
-    display: block;
+    background-color: #C9CAD9;
 }
 
 main{
