@@ -11,6 +11,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: #333333;
+    font-family: 'Nunito', sans-serif;
 }
 
 #container{
@@ -32,6 +33,12 @@ header{
 
 header h1{
     color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+header .darkmode{
+    
 }
 
 nav{
@@ -87,6 +94,7 @@ nav #menu li:hover > ul{
 main{
     grid-area: main;
     color: #FFFFFF;
+    background-color: #333333;
 }
 
 footer{
