@@ -12,25 +12,44 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
         </style>
-        <script src="scripts/darkmode.js" type="text/javascript"></script>
+        <script src="scripts/darkmode.js"></script>
     </head>
     <body onload="darkMode();">
         <div id="container">
             <header>
-                <h1>Title</h1>
-                <input id="darkmodebutton" type="image" src="images/sun-white.png" onclick="toggleDarkMode();" height="20" width="20" alt="sun"/>
+                <div id="title">
+                    <img id="icon" src="images/icons/movie-icon-white.png"
+                         height="40" width="40" alt="movie icon"/>
+                    <h1>Title</h1>
+                </div>
+                <input id="darkmodebutton" type="image" 
+                       src="images/icons/moon-white.png" 
+                       onclick="toggleDarkMode();" height="30" width="30"
+                       alt="dark mode icon"/>
             </header>
             
             <nav>
                 <ul id="menu">
                     <li>
-                        <a href="#">Home</a>
+                        <a href="index.html">
+                            <img src="images/icons/home-white.png"
+                                 height="15" width="15" alt="home icon"/>
+                            <span>Home</span>
+                        </a>
                     </li>
                     <li>
-                        <a href="#">Search</a>
+                        <a href="search.html">
+                            <img src="images/icons/search-white.png" height="15"
+                                 width="15" alt="search icon"/>
+                            <span>Search</span>
+                        </a>
                     </li>
                     <li id="movies">
-                        <a href="#">Movies</a>
+                        <a href="">
+                            <img src="images/icons/movie-reel-white.png"
+                                 height="15" width="15" alt="movie reel icon"/>
+                            <span>Movies</span>
+                        </a>
                         <ul id="dropdown">
                             <li>
                                 <a href="#">Fight Club</a>
@@ -48,7 +67,16 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
             </main>
             
             <footer>
-                footer
+                <div id="socialmedia">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="images/icons/facebook-white.png" height="20"
+                             width="20" alt="facebook"/>
+                    </a>
+                </div>
+                
+                <div id="info">
+                    
+                </div>
             </footer>
         </div>
     </body>

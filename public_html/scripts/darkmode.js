@@ -25,11 +25,11 @@ function darkMode(){
     if((localStorage.getItem('dark')) === 'true'){
         main[0].style.color = "#C9CAD9";
         main[0].style.backgroundColor = "#333333";
-        button.src = 'images/moon-white.png';
+        button.src = 'images/icons/moon-white.png';
     }
     else{
        main[0].style.color = "#333333";
        main[0].style.backgroundColor = "#C9CAD9";
-       button.src = 'images/sun-white.png';
+       button.src = 'images/icons/sun-white.png';
     }
 }
