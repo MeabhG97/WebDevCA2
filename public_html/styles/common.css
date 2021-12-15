@@ -11,33 +11,118 @@ body{
     margin: 0;
     padding: 0;
     background-color: #333333;
+    font-family: 'Nunito', sans-serif;
 }
 
 #container{
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-columns: 20% 1fr 5%;
-    grid-template-rows: 15% 1fr 10%;
+    grid-template-columns: 5% 1fr 5%;
+    grid-template-rows: 10% 5% 1fr 5%;
     grid-template-areas:    "header header header"
-                            "nav main ."
+                            "nav nav nav"
+                            ". main ."
                             "footer footer footer";
 }
 
 header{
     grid-area: header;
     background-color: #3D52D5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 20px 5px 20px;
+    align-items: center;
+}
+
+header #title{
+    
+}
+
+header #icon{
+    display: inline-block;
+}
+
+header h1{
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0 0 0 5px;
+    display: inline-block;
+}
+
+header #darkmodebutton{
 }
 
 nav{
     grid-area: nav;
-    background-color: #C9CAD9;
+    background-color: #3D52D5;
+}
+
+nav #menu{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    width: 50%;
+    justify-content: space-around;
+}
+
+nav #menu li{
+    position: relative; 
+}
+
+nav #menu li a{
+    height: 20px;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 5px;
+}
+
+nav #dropdown{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    width: 100px;
+    max-height: 0;
+    transition: max-height .5s;
+    overflow: hidden;
+}
+
+nav #dropdown li{
+    margin: 0;
+    padding: 0;
+}
+
+nav #dropdown li a{
+    display: block;
+    height: 20px;
+    color: #FFFFFF;
+    background: #0F94D2;
+}
+
+nav #menu li a:hover{
+    background-color: #0F94D2;
+    text-decoration: underline;
+}
+
+nav #menu li:hover > ul{
+    max-height: 200px;
 }
 
 main{
     grid-area: main;
+    margin: 10px 0 10px 0;
+    border: 2px solid #0F94D2;
+    border-radius: 15px;
+    padding: 5px 5px 5px 5px;
+    font-weight: 600;
 }
 
 footer{
     grid-area: footer;
+    background-color: #3D52D5;
+    color: #FFFFFF;
 }
