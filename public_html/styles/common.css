@@ -15,11 +15,11 @@ body{
 }
 
 #container{
-    width: 100vw;
-    height: 100vh;
+    max-width: 100vw;
+    height: 100vmin;
     display: grid;
-    grid-template-columns: 5% 1fr 5%;
-    grid-template-rows: 10% 5% 1fr 5%;
+    grid-template-columns: 1fr 18fr 1fr;
+    grid-template-rows: 10% 5% 16fr 1fr;
     grid-template-areas:    "header header header"
                             "nav nav nav"
                             ". main ."
@@ -125,4 +125,29 @@ footer{
     grid-area: footer;
     background-color: #3D52D5;
     color: #FFFFFF;
+}
+
+footer #socialmedia{
+    margin: 5px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+footer #socialmedia a{
+    margin: 0;
+    padding: 0;
+}
+
+footer #socialmedia a img{
+    margin: 0;
+    padding: 0;
+}
+
+footer #info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-size: 70%;
+    align-items: center;
 }
