@@ -5,10 +5,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>MovieZ | Home</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="styles/common.css" rel="stylesheet" type="text/css"/>
+        <link href="styles/index-main-style.css" rel="stylesheet" type="text/css"/>
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
         </style>
@@ -20,7 +21,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 <div id="title">
                     <img id="icon" src="images/icons/movie-icon-white.png"
                          height="40" width="40" alt="movie icon"/>
-                    <h1>Title</h1>
+                    <h1>MovieZ</h1>
                 </div>
                 <input id="darkmodebutton" type="image" 
                        src="images/icons/moon-white.png" 
@@ -63,7 +64,30 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
             </nav>
             
             <main id="main">
+                <h2>Welcome to MovieZ</h2>
                 
+                <p>
+                    MovieZ is a movie database website.
+                </p>
+                
+                <p>
+                    To start choose from the selection of movies below. Or click
+                    <a href="search.html" id="searchLink">here</a> 
+                    to search for one.
+                </p>
+                
+                <div id="moviePosters">
+                    <div class="poster">
+                        <img src="images/fightclub/fightclub-poster.jpg" 
+                             height="300" alt="fight club poster"/>
+                        <a href="fightClub.html">Fight Club</a>
+                    </div>
+                    <div class="poster">
+                        <img src="images/fury/fury-poster-1.jpg" height="300"
+                             alt="fury (2014) movie poster"/>
+                        <a href="fury.html">Fury</a>
+                    </div>
+                </div>
             </main>
             
             <footer>
@@ -92,7 +116,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 
                 <div id="info">
                     <span>
-                        Web Development CA website by Tony and Meabh
+                        Web Development CA website by Tony and Méabh
                     </span>
                     <span>
                         December 2021
