@@ -19,16 +19,19 @@ function darkMode(){
     }
     
     let main = document.getElementById('main');
+    let searchLink = document.getElementById('searchLink');
     let button = document.getElementById('darkmodebutton');
     
     if((localStorage.getItem('dark')) === 'true'){
         main.style.color = "#C9CAD9";
         main.style.backgroundColor = "#333333";
+        searchLink.style.color = "#C9CAD9";
         button.src = 'images/icons/moon-white.png';
     }
     else{
        main.style.color = "#333333";
        main.style.backgroundColor = "#C9CAD9";
+       searchLink.style.color = "#333333";
        button.src = 'images/icons/sun-white.png';
     }
 }

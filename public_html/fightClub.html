@@ -6,18 +6,22 @@ and open the template in the editor.
 -->
 <html>
     <head>
-         <title>TODO supply a title</title>
+        <title>MovieZ | Fight Club</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="styles/common.css" rel="stylesheet" type="text/css"/>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        </style>
+        <script src="scripts/darkmode.js"></script>
     </head>
-    <body>
+    <body onload="darkMode();">
         <div id="container">
             <header>
                 <div id="title">
                     <img id="icon" src="images/icons/movie-icon-white.png"
                          height="40" width="40" alt="movie icon"/>
-                    <h1>Fight Club</h1>
+                    <h1>MovieZ</h1>
                 </div>
                 <input id="darkmodebutton" type="image" 
                        src="images/icons/moon-white.png" 
@@ -52,15 +56,15 @@ and open the template in the editor.
                                 <a href="fightClub.html">Fight Club</a>
                             </li>
                             <li>
-                                <a href="#">Fury</a>
+                                <a href="fury.html">Fury</a>
                             </li>
                         </ul>
                     </li>
                 </ul>
             </nav>
             
-            <main>
-                main
+            <main id="main">
+                
             </main>
             
             <footer>
@@ -69,10 +73,31 @@ and open the template in the editor.
                         <img src="images/icons/facebook-white.png" height="20"
                              width="20" alt="facebook"/>
                     </a>
+                    
+                    <a href="https://twitter.com/" target="_blank">
+                        <img src="images/icons/twitter.png" height="20" 
+                             width="20" alt="twitter"/>
+                    </a>
+                    
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="images/icons/instagram-white.png" height="20" 
+                             width="20" alt="instagram"/>
+                    </a>
+                    
+                    <a href="https://github.com/MeabhG97/WebDevCA2" 
+                       target="_blank">
+                        <img src="images/icons/github-white.png" height="20"
+                             width="20" alt="github"/>
+                    </a>
                 </div>
                 
                 <div id="info">
-                    
+                    <span>
+                        Web Development CA website by Tony and Méabh
+                    </span>
+                    <span>
+                        December 2021
+                    </span>
                 </div>
             </footer>
         </div>

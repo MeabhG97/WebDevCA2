@@ -1,0 +1,44 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 21 Dec 2021, 14:02:16
+    Author     : meabh
+*/
+
+main p a{
+    text-decoration: none;
+}
+
+main p a:hover{
+    text-decoration: underline;
+}
+
+#moviePosters{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.poster{
+    position: relative;
+    text-align: center;
+}
+
+.poster a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 150%;
+    text-shadow: 0 0 3px #000000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;  
+}
+
+.poster:hover a{
+    display: block; 
+}
