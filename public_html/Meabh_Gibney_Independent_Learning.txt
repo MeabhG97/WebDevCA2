@@ -12,6 +12,8 @@ Animated drop down menu
 Resources used:
 	- https://www.w3jar.com/html-and-css-simple-and-animated-dropdown-menus/
 
+Text over images
+Resources used:
+        - https://www.w3schools.com/howto/howto_css_image_text.asp
 
-
-
+GitHub for version control
