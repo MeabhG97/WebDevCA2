@@ -1,0 +1,53 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 22 Dec 2021, 14:40:11
+    Author     : meabh
+*/
+#movieHeading{
+    display: flex;
+}
+
+#movieHeadingInfo{
+    display: grid;
+    grid-template-columns: 20px 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr;
+    grid-template-areas:    ".  title       tile"
+                            ".  table1      table2"
+                            ".  description description"
+}
+
+#movieHeadingInfo h2{
+    grid-area: title;
+    font-size: 300%;
+}
+
+#infoTable1{
+    grid-area: table1;
+    display: flex;
+}
+
+#infoTable2{
+    grid-area: table2;
+    display: flex;
+}
+
+#description{
+    grid-area: description;
+    margin: 20px 0 0 0;
+}
+
+.tableHeadings{
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px 0 0;
+    font-weight: 400;
+}
+
+.tableInfo{
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+}
