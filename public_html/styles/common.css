@@ -2,7 +2,7 @@
 Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
 Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
 */
-/* 
+/*
     Created on : 29 Nov 2021, 14:58:23
     Author     : meabh
 */
@@ -37,7 +37,7 @@ header{
 }
 
 header #title{
-    
+
 }
 
 header #icon{
@@ -70,7 +70,7 @@ nav #menu{
 }
 
 nav #menu li{
-    position: relative; 
+    position: relative;
 }
 
 nav #menu li a{
@@ -126,7 +126,7 @@ main h2{
 }
 
 main p{
-    
+
 }
 
 footer{
@@ -158,4 +158,21 @@ footer #info{
     flex-wrap: nowrap;
     font-size: 70%;
     align-items: center;
+}
+
+
+form #searchButton{
+  background-color: #3D52D5;
+  border-color:#000000;
+  color:#FFFFFF;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+#movieName{
+  border-radius: 10px;
+}
+
+#movieYear{
+  border-radius: 10px;
 }
