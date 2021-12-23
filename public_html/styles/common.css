@@ -125,10 +125,6 @@ main h2{
     margin: 0 0 0 0;
 }
 
-main p{
-
-}
-
 footer{
     grid-area: footer;
     background-color: #3D52D5;
