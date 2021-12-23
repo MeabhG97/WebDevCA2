@@ -1,0 +1,20 @@
+Using Github for version control
+Using Git commands for pushing and pulling
+
+Adding additional features with JavaScript
+	-using local storage
+	-using Arrays
+	-changing CSS with JS
+	-changing HTML content with JS
+	-opening new windows if a condition is met
+
+https://www.w3schools.com/jsref/met_win_open.asp
+https://www.w3schools.com/js/js_array_methods.asp
+https://www.w3schools.com/jsref/prop_win_localstorage.asp
+https://www.w3schools.com/jsref/prop_html_innerhtml.asp
+
+Learning to use a different IDE - Atom (made by Github)
+
+I also used my previous experience from Python when testing out certain parts
+of the program. If i failed to refrence something, it may be because i was
+ implementing something i previously learned to do in Python.

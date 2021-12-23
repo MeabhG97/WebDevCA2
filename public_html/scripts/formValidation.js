@@ -1,7 +1,7 @@
 // open html using JS: https://www.w3schools.com/jsref/met_win_open.asp
 // using an Array: https://www.w3schools.com/js/js_array_methods.asp
-// call js function onload: https://www.w3schools.com/jsref/event_onload.asp
 // using local storage: https://www.w3schools.com/jsref/prop_win_localstorage.asp
+//https://www.w3schools.com/jsref/prop_html_innerhtml.asp
 //any other topic that wasnt referenced came from my experience from Python
 
 function valFun(){
