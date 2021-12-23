@@ -1,11 +1,8 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
--->
+
 <html>
     <head>
-        <title>MovieZ | Search</title>
+        <title>Search</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="styles/common.css" rel="stylesheet" type="text/css"/>
@@ -13,6 +10,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
             @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
         </style>
         <script src="scripts/darkmode.js"></script>
+        <script src="scripts/formValidation.js"></script>
+
     </head>
     <body onload="darkMode();">
         <div id="container">
@@ -20,14 +19,14 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                 <div id="title">
                     <img id="icon" src="images/icons/movie-icon-white.png"
                          height="40" width="40" alt="movie icon"/>
-                    <h1>MovieZ</h1>
+                    <h1>MovieReviews</h1>
                 </div>
-                <input id="darkmodebutton" type="image" 
-                       src="images/icons/moon-white.png" 
+                <input id="darkmodebutton" type="image"
+                       src="images/icons/moon-white.png"
                        onclick="toggleDarkMode();" height="30" width="30"
                        alt="dark mode icon"/>
             </header>
-            
+
             <nav>
                 <ul id="menu">
                     <li>
@@ -61,38 +60,185 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                     </li>
                 </ul>
             </nav>
-            
+
             <main id="main">
-                
+
+              <h1>MovieReviews Search</h1>
+
+              <form action="displayForm.html" name="searchMovies" id="searchMovies" onsubmit="return valFun();" method="get">
+                <fieldset>
+                  <legend>General Information</legend>
+
+                  <div>
+                    <label>Movie name</label>
+                    <input type="text" id="movieName" name="movieName"/>
+                  </div>
+                  <br>
+
+                  <div>
+                    <label>Year</label>
+                    <input type="number" id="movieYear" name="movieYear">
+                  </div>
+
+                </fieldset>
+
+                <br>
+                <br>
+
+                <fieldset>
+                  <legend>Movie Genre</legend>
+                  <table>
+                    <tbody>
+
+                      <!--1st row-->
+                      <tr>
+                        <td>
+                          <input id="Action" type="checkbox">
+                          <label>Action</label>
+                        </td>
+
+                        <td>
+                          <input id="Documentary" type="checkbox">
+                          <label>Documentary</label>
+                        </td>
+
+                        <td>
+                          <input id="Mystery" type="checkbox">
+                          <label>Mystery</label>
+                        </td>
+                      </tr>
+
+                      <!--2nd Row-->
+                      <tr>
+                        <td>
+                          <input id="Adventure" type="checkbox">
+                          <label>Adventure</label>
+                        </td>
+
+                        <td>
+                          <input id="Drama" type="checkbox">
+                          <label>Drama</label>
+                        </td>
+
+                        <td>
+                          <input id="Romance" type="checkbox">
+                          <label>Romance</label>
+                        </td>
+                      </tr>
+
+                      <!--3rd Row-->
+                      <tr>
+                        <td>
+                          <input id="Animation" type="checkbox">
+                          <label>Animation</label>
+                        </td>
+
+                        <td>
+                          <input id="Fantasy" type="checkbox">
+                          <label>Fantasy</label>
+                        </td>
+
+                        <td>
+                          <input id="Scifi" type="checkbox">
+                          <label>Sci-fi</label>
+                        </td>
+                      </tr>
+
+                      <!--4th Row-->
+                      <tr>
+                        <td>
+                          <input id="Biography" type="checkbox">
+                          <label>Biography</label>
+                        </td>
+
+                        <td>
+                          <input id="History" type="checkbox">
+                          <label>History</label>
+                        </td>
+
+                        <td>
+                          <input id="Sport" type="checkbox">
+                          <label>Sport</label>
+                        </td>
+                      </tr>
+
+                      <!--5th Row-->
+                      <tr>
+                        <td>
+                          <input id="Comedy" type="checkbox">
+                          <label>Comedy</label>
+                        </td>
+
+                        <td>
+                          <input id="Horror" type="checkbox">
+                          <label>Horror</label>
+                        </td>
+
+                        <td>
+                          <input id="Thriller" type="checkbox">
+                          <label>Thriller</label>
+                        </td>
+                      </tr>
+
+                      <!--6th Row-->
+                      <tr>
+                        <td>
+                          <input id="Crime" type="checkbox">
+                          <label>Crime</label>
+                        </td>
+
+                        <td>
+                          <input id="Musical" type="checkbox">
+                          <label>Musical</label>
+                        </td>
+
+                        <td>
+                          <input id="War" type="checkbox">
+                          <label>War</label>
+                        </td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+                </fieldset>
+
+                <br>
+
+                <div>
+                  <input id="searchButton" type="submit" value="Search">
+                </div>
+
+              </form>
+
             </main>
-            
+
             <footer>
                 <div id="socialmedia">
                     <a href="https://www.facebook.com/" target="_blank">
                         <img src="images/icons/facebook-white.png" height="20"
                              width="20" alt="facebook"/>
                     </a>
-                    
+
                     <a href="https://twitter.com/" target="_blank">
-                        <img src="images/icons/twitter.png" height="20" 
+                        <img src="images/icons/twitter.png" height="20"
                              width="20" alt="twitter"/>
                     </a>
-                    
+
                     <a href="https://www.instagram.com/" target="_blank">
-                        <img src="images/icons/instagram-white.png" height="20" 
+                        <img src="images/icons/instagram-white.png" height="20"
                              width="20" alt="instagram"/>
                     </a>
-                    
-                    <a href="https://github.com/MeabhG97/WebDevCA2" 
+
+                    <a href="https://github.com/MeabhG97/WebDevCA2"
                        target="_blank">
                         <img src="images/icons/github-white.png" height="20"
                              width="20" alt="github"/>
                     </a>
                 </div>
-                
+
                 <div id="info">
                     <span>
-                        Web Development CA website by Tony and Méabh
+                        Web Development CA website by Tony and Meabh
                     </span>
                     <span>
                         December 2021
