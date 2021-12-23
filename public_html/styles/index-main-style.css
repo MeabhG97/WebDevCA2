@@ -7,6 +7,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
     Author     : meabh
 */
 
+main img{
+    border-radius: 20px;
+}
+
 main p a{
     text-decoration: none;
 }
