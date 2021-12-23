@@ -51,3 +51,54 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
     flex-direction: column;
     font-weight: 700;
 }
+
+
+
+#content{
+    display: flex;
+    flex-flow: column;
+    margin: 20px 20px 0 20px;
+}
+
+h3{
+    font-size: 150%;
+    text-decoration: underline;
+    text-decoration-color: #D17A22; 
+}
+
+#content p{
+    margin: 0 0 5px 0;
+}
+
+#cast{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+.actor{
+    width: 50%;
+    display: flex;
+    margin: 0 0 10px 0;
+}
+
+.nameAndRole{
+    display: flex;
+    flex-flow: column;
+    margin: 0 0 0 10px;
+    justify-content: center;
+}
+
+.name{
+    font-weight: 700;
+}
+
+.role{
+    font-size: 85%;
+    font-style: italic;
+}
+
+#trailer{
+    display: flex;
+    justify-content: center;
+}
